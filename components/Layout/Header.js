@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 
 const styles = {
   root: {
-    padding: '5px 10px',
+    marginTop: '10px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
