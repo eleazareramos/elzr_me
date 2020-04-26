@@ -15,7 +15,7 @@ class E_Document extends Document {
             rel="stylesheet"
           />
           <link rel="shortcut icon" href="/e-favicon.png" />
-          <title>E is preferred</title>
+          <title>🤙</title>
         </Head>
         <body>
           <Main />
