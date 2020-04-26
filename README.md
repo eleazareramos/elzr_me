@@ -1,2 +1,2 @@
 # elzr_me
-personal website.
+personal website. nothing interesting to see here.
