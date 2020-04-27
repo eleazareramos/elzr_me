@@ -2,3 +2,5 @@ node_modules/
 .next/
 package-lock.json
 .now
+pages/admin.js
+.env
