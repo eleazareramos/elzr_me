@@ -5,10 +5,10 @@ import LinkedInIcon from 'mdi-react/LinkedinIcon'
 import { defaults, colors } from '../styles/theme'
 
 const BUTTONS = [
-  { label: 'About', to: '/about' },
-  { label: 'Contact', to: '/contact'},
-  { label: 'Not a Blog', to: '/not-a-blog' },
-  { label: 'Bookshelf', to: '/bookshelf' },
+  { label: 'about', to: '/about' },
+  { label: 'contact', to: '/contact'},
+  { label: 'not a blog', to: '/not-a-blog' },
+  { label: 'bookshelf', to: '/bookshelf' },
 ]
 
 const styles = {
