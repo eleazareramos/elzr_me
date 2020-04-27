@@ -18,3 +18,7 @@ h1, h3, p, span, a {
 *:focus {
   outline: none;
 }
+
+*::-webkit-scrollbar {
+  display: none;
+}
