@@ -15,13 +15,12 @@ const styles = {
     justifyContent: "flex-start",
     padding: "10px",
     maxHeight: 200,
-    overflow: 'auto'
+    overflow: "auto",
   },
   bookCover: {
     borderRadius: "10px",
     margin: "10px",
     cursor: "pointer",
-    objectFit: 'cover'
   },
   bookTitle: {
     color: "lightgrey",
@@ -59,7 +58,12 @@ const Book = (props) => {
         onClick={() => window.open(book.purchaseUrl)}
       />
       <div style={styles.textArea}>
-        <h1 style={styles.bookTitle}>{book.title}</h1>
+        <h1
+          style={styles.bookTitle}
+          onClick={() => window.open(book.purchaseUrl)}
+        >
+          {book.title}
+        </h1>
         <span style={styles.bookAuthor}>{`by ${book.author}`}</span>
         <span style={styles.blurb}>{book.blurb}</span>
       </div>

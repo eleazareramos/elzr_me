@@ -1,6 +1,5 @@
 import { useContext, useState, useEffect } from "react";
 import FirebaseContext from "../context/firebase";
-import WorkInProgress from "../components/WorkInProgress";
 import Book from "../components/Book";
 
 const BookPage = () => {
@@ -21,9 +20,8 @@ const BookPage = () => {
 
   return (
     <>
-      {books.map((book,i) => {
-        const orientation = i % 2 === 0 ? 'left' : 'right'
-        // const orientation = 'left'
+      {books.map((book, i) => {
+        const orientation = i % 2 === 0 ? "left" : "right";
         return <Book book={book} width={"50vw"} orientation={orientation} />;
       })}
     </>

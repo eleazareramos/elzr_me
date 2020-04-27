@@ -6,12 +6,12 @@ const styles = {
   root: {
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",
-    height: '100vh'
+    alignItems: "center"
   },
   infoContainer: {
     ...defaults.centeredRow,
     justifyContent: "center",
+    marginBottom: 20
   },
   linkText: {
     color: colors.highlight,
@@ -33,13 +33,6 @@ const styles = {
   },
   body: {
     height: "100%",
-  },
-  footerText: {
-    fontSize: "10px",
-    marginBottom: 5,
-    cursor: "pointer",
-    textDecoration: "underline",
-    color: "grey",
   },
 };
 
@@ -70,16 +63,6 @@ const Layout = (props) => {
         </div>
       </>
       <div style={styles.body}>{props.children}</div>
-      <div style={styles.footer}>
-        <span
-          style={styles.footerText}
-          onClick={() =>
-            window.open("https://github.com/eleazareramos/elzr_me")
-          }
-        >
-          the unimpressive source code to this website.
-        </span>
-      </div>
     </div>
   );
 };
