@@ -14,8 +14,6 @@ class E_Document extends Document {
             href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
             rel="stylesheet"
           />
-          <link rel="shortcut icon" href="/e-favicon.png" />
-          <title>🤙</title>
         </Head>
         <body>
           <Main />

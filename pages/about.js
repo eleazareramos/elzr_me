@@ -1,9 +1,7 @@
+import WorkInProgress from "../components/WorkInProgress";
+
 const AboutPage = () => (
-  <div style={{ padding: '0px 20px' }}>
-    <p style={{ fontStyle: 'italic', color: 'white' }}>
-      figuring out what i'm about. then, i'll write it down here.
-    </p>
-  </div>
+  <WorkInProgress text="figuring out what i'm about. then, i'll write it down here." />
 )
 
-export default AboutPage
+export default AboutPage;

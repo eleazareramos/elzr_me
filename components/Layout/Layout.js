@@ -1,7 +1,6 @@
 import Header from './Header'
 import { useRouter } from 'next/router'
 import { colors, defaults } from '../../styles/theme'
-import BackIcon from 'mdi-react/HamburgerMenuBackIcon'
 
 const styles = {
   root: {
@@ -9,11 +8,11 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
+    height: '96vh'
   },
   infoContainer: {
     ...defaults.centeredRow,
     justifyContent: 'center',
-    marginBottom: 10,
   },
   linkText: {
     color: colors.highlight,
@@ -27,7 +26,6 @@ const styles = {
   pageTitleContainer: {
     ...defaults.centeredRow,
     alignItems: 'flex-end',
-    marginBottom: 10,
   },
   pageTitle: {
     color: 'lightgrey',
@@ -45,10 +43,11 @@ const Layout = (props) => {
   let title = ''
   if (pathname !== '/') {
     title = pathname.replace('/', '').replace('-',' ').replace('-',' ')
+    title = `[${title}]`
   }
   return (
     <div style={styles.root}>
-      <Header />
+      <Header title={title} />
       <div style={styles.infoContainer}>
         <a
           style={styles.linkText}
@@ -61,16 +60,6 @@ const Layout = (props) => {
         <a style={styles.linkText} href="https://fureyfs.com">
           Furey
         </a>
-      </div>
-      <div style={styles.pageTitleContainer}>
-        {router.pathname !== '/' ? (
-          <BackIcon
-            color="lightgrey"
-            style={{ cursor: 'pointer' }}
-            onClick={() => router.push('/')}
-          />
-        ) : null}
-        <h3 style={styles.pageTitle}>{title}</h3>
       </div>
       <div style={styles.body}>{props.children}</div>
     </div>
