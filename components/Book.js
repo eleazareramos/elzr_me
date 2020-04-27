@@ -58,6 +58,7 @@ const Book = (props) => {
         style={styles.bookCover}
         src={book.imgUrl}
         width={"20%"}
+        height={smallVw && 200}
         onClick={() => window.open(book.purchaseUrl)}
       />
       <div style={styles.textArea}>
