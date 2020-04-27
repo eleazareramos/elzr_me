@@ -6,7 +6,7 @@ const styles = {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    height: "100%",
+    height: "50vh",
   },
   emailContainer: {
     display: "flex",

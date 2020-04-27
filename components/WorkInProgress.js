@@ -7,7 +7,7 @@ const styles = {
     alignItems: "center",
     justifyContent: "center",
     flexDirection: 'column',
-    height: "100%",
+    height: "50vh",
   },
   icon: {
     color: "white",
