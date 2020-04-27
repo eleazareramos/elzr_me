@@ -5,3 +5,4 @@ package-lock.json
 pages/admin.js
 .env
 devFirebaseConfig.js
+.now

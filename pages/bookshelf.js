@@ -4,7 +4,6 @@ import Book from "../components/Book";
 
 const BookPage = () => {
   const firebase = useContext(FirebaseContext);
-
   const [books, setBooks] = useState([]);
 
   const getBooks = async () => {

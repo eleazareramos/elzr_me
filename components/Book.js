@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { colors } from "../styles/theme";
+import useSmallVw from "../hooks/useSmallVw";
 
 const styles = {
   main: {
@@ -14,13 +15,13 @@ const styles = {
     alignItems: "flex-start",
     justifyContent: "flex-start",
     padding: "10px",
-    maxHeight: 200,
     overflow: "auto",
   },
   bookCover: {
     borderRadius: "10px",
     margin: "10px",
     cursor: "pointer",
+    objectFit: "cover",
   },
   bookTitle: {
     color: "lightgrey",
@@ -42,12 +43,14 @@ const styles = {
 
 const Book = (props) => {
   const { book } = props;
+  const smallVw = useSmallVw(window);
+
   return (
     <div
       style={{
         ...styles.main,
-        minWidth: props.width,
-        maxWidth: props.width,
+        minWidth: !smallVw && props.width,
+        maxWidth: !smallVw && props.width,
         flexDirection: props.orientation === "right" ? "row-reverse" : "row",
       }}
     >
