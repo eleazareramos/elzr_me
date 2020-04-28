@@ -13,7 +13,6 @@ const styles = {
   headshot: {
     height: 64,
     width: 64,
-    marginRight: 10,
     borderRadius: "10px",
     boxShadow: "2px 4px " + colors.highlight,
     cursor: "pointer",
