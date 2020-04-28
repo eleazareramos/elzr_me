@@ -9,7 +9,7 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
   },
- 
+
   headshot: {
     height: 64,
     width: 64,
@@ -23,9 +23,8 @@ const styles = {
     justifyContent: "space-between",
   },
   pageTitle: {
-    marginLeft: 20,
     color: colors.highlight,
-  }
+  },
 };
 
 const Header = (props) => {
@@ -38,7 +37,14 @@ const Header = (props) => {
           src="/e.jpg"
           onClick={() => router.push("/")}
         />
-        <h1 style={styles.pageTitle}>{props.title}</h1>
+        <h1
+          style={{
+            ...styles.pageTitle,
+            marginLeft: props.title !== "" ? 20 : 0,
+          }}
+        >
+          {props.title}
+        </h1>
       </div>
     </div>
   );
