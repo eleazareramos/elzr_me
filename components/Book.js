@@ -6,7 +6,7 @@ import useSmallVw from "../hooks/useSmallVw";
 const styles = {
   main: {
     display: "flex",
-    alignItems: "stretch",
+    alignItems: "center",
     margin: "10px 0px",
   },
   textArea: {
