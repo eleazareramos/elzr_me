@@ -43,7 +43,7 @@ const styles = {
 
 const Book = (props) => {
   const { book } = props;
-  const smallVw = useSmallVw(window);
+  const smallVw = useSmallVw();
 
   return (
     <div

@@ -1,7 +1,11 @@
-import WorkInProgress from "../components/WorkInProgress";
+import Bio from '../components/About/Bio'
 
-const AboutPage = () => (
-  <WorkInProgress text="figuring out what i'm about. then, i'll write it down here." />
-)
+const AboutPage = () => {
+  return (
+    <>
+      <Bio />
+    </>
+  )
+}
 
-export default AboutPage;
+export default AboutPage
