@@ -1,8 +1,7 @@
 import useSmallVw from '../../hooks/useSmallVw'
 import BioSection from './BioSection'
 import { colors } from '../../styles/theme'
-
-import WorkInProgress from '../WorkInProgress'
+import FadeIn from 'react-fade-in'
 
 const createStyles = ({ smallVw }) => {
   return {
@@ -89,6 +88,7 @@ const Bio = () => {
   const styles = createStyles({ smallVw })
   return (
     <div style={styles.container}>
+      <FadeIn>
       <div style={styles.descriptionContainer}>
         <p style={styles.descriptionText}>
           I'm a 24 y/o Co-Founder of an{' '}
@@ -176,11 +176,12 @@ const Bio = () => {
             KPI identification, +
           </p>
           <p style={styles.skill}>
-            <strong>OTHER</strong> | Agile / Scrum, Productivity improvement,
+            <strong>OTHER</strong> | Business Founding, Agile / Scrum, Productivity improvement,
             Process design, +
           </p>
         </div>
       </div>
+      </FadeIn>
     </div>
   )
 }

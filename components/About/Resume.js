@@ -2,7 +2,7 @@ import WorkInProgress from '../../components/WorkInProgress'
 
 const Resume = () => (
   <WorkInProgress 
-    text="Work History / Past Experience - Coming Soon."
+    text="Current + Past Experience - Coming Soon."
   />
   )
 
