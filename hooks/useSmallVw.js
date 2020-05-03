@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 const useSmallVw = () => {
   const [smallVw, setSmallVw] = useState(false)
 
-  const handleResize = () => setSmallVw(window.innerWidth <= 500)
+  const handleResize = () => setSmallVw(window.innerWidth <= 800)
   useEffect(() => {
     if (window) {
       handleResize()
