@@ -85,14 +85,15 @@ const Bio = () => {
               council, started dance crews, integrated friend groups, and worked
               to inspire the kids around me. Today, I lean on that passion.
               Money's nice - but that tends to come naturally when you start
-              with People. My objective is to build the ultimate organization: where
-              its members are in constant pursuit of{' '}
+              with People. My objective is to build the ultimate organization:
+              where its members are in constant pursuit of{' '}
               <a
                 style={styles.link}
                 href="https://positivepsychology.com/eudaimonia/"
               >
                 Eudaimonia
-              </a>{'.'}
+              </a>
+              {'.'}
             </p>
           </BioSection>
           <BioSection color="lightgrey" width={400}>
@@ -110,11 +111,13 @@ const Bio = () => {
               KPI identification, +
             </p>
             <p style={styles.skill}>
-              <strong>OTHER</strong> | Founding, Agile / Scrum,
-              Productivity improvement, Process design, +
+              <strong>OTHER</strong> | Founding, Agile / Scrum, Productivity
+              improvement, Process design, +
             </p>
           </BioSection>
         </div>
+      </FadeIn>
+      <FadeIn>
         <div style={styles.sectionsContainer}>
           <BioSection color="black" width={300}>
             <h1 style={styles.sectionTitle}>Almost a Dancer 🕺</h1>

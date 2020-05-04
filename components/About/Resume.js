@@ -32,17 +32,16 @@ const styles = {
   educationContainer: {
     display: 'flex',
     alignItems: 'flex-start',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   educationHeader: {
     fontSize: 16,
     marginBottom: 5,
-    color: colors.widget
+    color: colors.widget,
   },
   educationText: {
     fontSize: 14,
   },
-  
 }
 
 const Resume = () => {
@@ -50,8 +49,8 @@ const Resume = () => {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <FadeIn>
-        <div style={{ ...styles.container, width: !smallVw && 850 }}>
+      <div style={{ ...styles.container, width: !smallVw && 850 }}>
+        <FadeIn>
           <h3 style={styles.title}>CURRICULUM VITAE</h3>
           <Experience
             title="COO & Co-Founder"
@@ -155,15 +154,19 @@ const Resume = () => {
           </Experience>
           <h1 style={styles.educationHeader}>Education</h1>
           <div style={styles.educationContainer}>
-          <p style={styles.educationText}>Fullstack Academy of Code - Coding Bootcamp</p>
-          <p style={styles.educationText}>2018</p>
+            <p style={styles.educationText}>
+              Fullstack Academy of Code - Coding Bootcamp
+            </p>
+            <p style={styles.educationText}>2018</p>
           </div>
           <div style={styles.educationContainer}>
-          <p style={styles.educationText}>William Paterson University - BS, Accounting</p>
-          <p style={styles.educationText}>2012-16</p>
+            <p style={styles.educationText}>
+              William Paterson University - BS, Accounting
+            </p>
+            <p style={styles.educationText}>2012-16</p>
           </div>
-        </div>
-      </FadeIn>
+        </FadeIn>
+      </div>
     </div>
   )
 }
