@@ -29,6 +29,20 @@ const styles = {
   highlightText: {
     color: colors.highlight,
   },
+  educationContainer: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between'
+  },
+  educationHeader: {
+    fontSize: 16,
+    marginBottom: 5,
+    color: colors.widget
+  },
+  educationText: {
+    fontSize: 14,
+  },
+  
 }
 
 const Resume = () => {
@@ -87,7 +101,8 @@ const Resume = () => {
             period="2017"
           >
             <li style={styles.basicText}>
-              Pioneered the finance function, reporting directly to the COO.
+              Pioneered the in-house finance function (previously outsourced),
+              reporting directly to the COO.
             </li>
             <li style={styles.basicText}>
               Crafted a chart of accounts and close process tailored for a high
@@ -125,19 +140,28 @@ const Resume = () => {
             </li>
           </Experience>
           <Experience title="The Starter Jobs" period="2012-15">
-          <li style={styles.basicText}>
+            <li style={styles.basicText}>
               Clerical documentation for mortgage processing.{' '}
               <span style={styles.highlightText}>
                 (American Financial Resources)
               </span>
             </li>
             <li style={styles.basicText}>
-              Food & Bev: from bus boy to cashier to cook.{' '}
+              Food & Bev: from barista to cashier to cook.{' '}
               <span style={styles.highlightText}>
                 (Dunkin', Smashburger, A local brunch spot)
               </span>
             </li>
           </Experience>
+          <h1 style={styles.educationHeader}>Education</h1>
+          <div style={styles.educationContainer}>
+          <p style={styles.educationText}>Fullstack Academy of Code - Coding Bootcamp</p>
+          <p style={styles.educationText}>2018</p>
+          </div>
+          <div style={styles.educationContainer}>
+          <p style={styles.educationText}>William Paterson University - BS, Accounting</p>
+          <p style={styles.educationText}>2012-16</p>
+          </div>
         </div>
       </FadeIn>
     </div>
