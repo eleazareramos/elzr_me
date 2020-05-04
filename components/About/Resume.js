@@ -39,9 +39,10 @@ const styles = {
     marginBottom: 5,
     color: colors.widget,
   },
-  educationText: {
+  educationText: textAlign => ({
     fontSize: 14,
-  },
+    textAlign
+  }),
 }
 
 const Resume = () => {
@@ -154,16 +155,16 @@ const Resume = () => {
           </Experience>
           <h1 style={styles.educationHeader}>Education</h1>
           <div style={styles.educationContainer}>
-            <p style={styles.educationText}>
+            <p style={styles.educationText()}>
               Fullstack Academy of Code - Coding Bootcamp
             </p>
-            <p style={styles.educationText}>2018</p>
+            <p style={styles.educationText('right')}>2018</p>
           </div>
           <div style={styles.educationContainer}>
-            <p style={styles.educationText}>
+            <p style={styles.educationText()}>
               William Paterson University - BS, Accounting
             </p>
-            <p style={styles.educationText}>2012-16</p>
+            <p style={styles.educationText('right')}>2012-16</p>
           </div>
         </div>
       </FadeIn>
