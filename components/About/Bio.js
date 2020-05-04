@@ -76,23 +76,23 @@ const Bio = () => {
             <p style={styles.descriptionText}>
               I'm a 24 y/o Co-Founder of an{' '}
               <a style={styles.link} href="https://fureyfs.com">
-                Accounting Firm.
-              </a>{' '}
-              Most entrepreneurs' stories begin when they were just 10 years
+                Accounting Firm
+              </a>
+              . Most entrepreneurs' stories begin when they were just 10 years
               old: selling baseball cards or brokering snow shoveling services.
               However, I did not care to make a quick buck. I was more
               interested in building & leading organizations. I joined student
               council, started dance crews, integrated friend groups, and worked
               to inspire the kids around me. Today, I lean on that passion.
               Money's nice - but that tends to come naturally when you start
-              with People. My goal is to build the ultimate organization: where
+              with People. My objective is to build the ultimate organization: where
               its members are in constant pursuit of{' '}
               <a
                 style={styles.link}
                 href="https://positivepsychology.com/eudaimonia/"
               >
-                Eudaimonia.
-              </a>
+                Eudaimonia
+              </a>{'.'}
             </p>
           </BioSection>
           <BioSection color="lightgrey" width={400}>
