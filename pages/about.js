@@ -1,11 +1,17 @@
 import Bio from '../components/About/Bio'
 import Resume from '../components/About/Resume'
+import useOnBrowser from '../hooks/useOnBrowser'
 
 const AboutPage = () => {
+  const onBrowser = useOnBrowser()
   return (
     <>
-      <Bio />
-      <Resume />
+      {onBrowser ? (
+        <>
+          <Bio />
+          <Resume />
+        </>
+      ) : null}
     </>
   )
 }

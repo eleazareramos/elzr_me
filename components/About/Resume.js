@@ -49,8 +49,8 @@ const Resume = () => {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <div style={{ ...styles.container, width: !smallVw && 850 }}>
-        <FadeIn>
+      <FadeIn>
+        <div style={{ ...styles.container, width: !smallVw && 850 }}>
           <h3 style={styles.title}>CURRICULUM VITAE</h3>
           <Experience
             title="COO & Co-Founder"
@@ -58,7 +58,7 @@ const Resume = () => {
             period="2017+"
           >
             <li style={styles.basicText}>
-              Led a company of {FUREY_HEADCOUNNT} employees{' '}
+              Led a bootstrapped company of {FUREY_HEADCOUNNT} employees{' '}
               <span style={styles.asteriskText}>
                 (headcount as of {HEADCOUNT_AS_OF}){' '}
               </span>
@@ -165,8 +165,8 @@ const Resume = () => {
             </p>
             <p style={styles.educationText}>2012-16</p>
           </div>
-        </FadeIn>
-      </div>
+        </div>
+      </FadeIn>
     </div>
   )
 }

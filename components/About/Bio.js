@@ -116,8 +116,6 @@ const Bio = () => {
             </p>
           </BioSection>
         </div>
-      </FadeIn>
-      <FadeIn>
         <div style={styles.sectionsContainer}>
           <BioSection color="black" width={300}>
             <h1 style={styles.sectionTitle}>Almost a Dancer 🕺</h1>
