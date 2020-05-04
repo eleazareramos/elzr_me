@@ -59,7 +59,7 @@ const Resume = () => {
             period="2017+"
           >
             <li style={styles.basicText}>
-              Lead a company of {FUREY_HEADCOUNNT} employees{' '}
+              Led a company of {FUREY_HEADCOUNNT} employees{' '}
               <span style={styles.asteriskText}>
                 (headcount as of {HEADCOUNT_AS_OF}){' '}
               </span>
