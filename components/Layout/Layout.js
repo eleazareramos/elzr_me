@@ -17,10 +17,7 @@ const styles = {
     color: "lightgrey",
     marginLeft: "10px",
     borderBottom: "4px solid " + colors.widget,
-  },
-  body: {
-    height: "100%",
-  },
+  }
 };
 
 const Layout = (props) => {
@@ -33,11 +30,8 @@ const Layout = (props) => {
   }
   return (
     <div style={styles.root}>
-      <>
         <Header title={title} />
-        
-      </>
-      <div style={styles.body}>{props.children}</div>
+      {props.children}
     </div>
   );
 };
