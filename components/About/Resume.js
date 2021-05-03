@@ -3,8 +3,8 @@ import FadeIn from "react-fade-in";
 import Experience from "./Experience";
 import useSmallVw from "../../hooks/useSmallVw";
 
-const FUREY_HEADCOUNNT = 16;
-const HEADCOUNT_AS_OF = "May '20";
+const FUREY_HEADCOUNNT = 26;
+const HEADCOUNT_AS_OF = "May '21";
 
 const styles = {
   title: {
